@@ -110,7 +110,7 @@ userSubmit3.addEventListener('click', function() {userInput(3)}, false);
 
 // hashtag copy
 const hashtagCopyBotton = document.getElementById("hashtag-copy-button");
-const hashtag = "#CEED #素数大富豪 #語呂素数"
+const hashtag = "#裏CEED3rd #素数大富豪 #語呂素数"
 hashtagCopyBotton.addEventListener("click", () => {
     if (!navigator.clipboard) {
         alert("このブラウザは対応していません");
