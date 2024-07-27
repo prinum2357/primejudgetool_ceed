@@ -1,0 +1,148 @@
+/* DEBUG */
+/* .container {
+    border: 1px solid #000000;
+} */
+/*  */
+
+/* RESPONSIBLE */
+/* display_width >= 678 px */
+@media (min-width: 678px) {
+    h1 {
+        font-size: xx-large;
+    }
+
+    #header {
+        height: 10vh;
+    }
+
+    #maininput {
+        height: 12.5vh;
+    }
+
+    #judge {
+        height: 10vh;
+    }
+
+    #userinput {
+        height: 12.5vh;
+    }
+
+    #judgelog {
+        height: 50vh;
+    }
+
+    #table-window {
+        height: 50vh;
+        overflow-y: scroll;
+    }
+
+    #footer {
+        height:5vh;
+        z-index:100;
+    }
+}
+
+/* display_width < 677 px */
+@media (max-width:767px) {
+
+    h1 {
+        font-size: x-large;
+    }
+
+    #header {
+        height: 7.5vh;
+    }
+
+    #maininput {
+        height: 12.5vh;
+    }
+    
+    #judge {
+        height: 10vh;
+    }
+    
+    #userinput {
+        height: 32.5vh;
+    }
+    
+    #judgelog {
+        height: 32.5vh;
+    }
+
+    #table-window {
+        height: 32.5vh;
+        overflow-y: scroll;
+    }
+    
+    #footer {
+        height:5vh;
+        z-index:100;
+    }
+
+}
+
+/* PUBLIC */
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.row {
+    height: 100%
+}
+
+input, button {
+    width: 100%
+}
+
+/* header */
+#title {
+    margin: 0px;
+}
+
+/* mainjudge */
+#judge-result {
+    margin: 0px;
+}
+
+span {
+    font-weight: bold;
+}
+
+/* tablelog */
+
+table {
+    width: 100%;
+}
+
+.table thead th {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+.tablebody-text {
+    text-align: left;
+}
+
+#tablerow0, #tablerow1 {
+    width: 40%;
+}
+
+#tablerow2 {
+    width: 20%;
+}
+
+/* footer */
+#twitter-link {
+    text-align: right;
+}

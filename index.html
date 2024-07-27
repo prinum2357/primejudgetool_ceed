@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>素数判定ツール -CEED ver.-</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <div class="container" id="header">
+        <div class="row d-flex align-items-center">
+            <div class="col-9">
+                <h1 id="title">素数判定ツール -CEED ver.-</h1>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-primary button" type="button" id="hashtag-copy-button">
+                    copy #
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- maininput -->
+    <div class="container" id="maininput">
+        <div class="row d-flex align-items-center">
+            <div class="col-12">
+                <input class="form-control" type="text" id="maininput-text" placeholder="使用できる文字は 0-9ATJQKatjqk です" autocomplete="off">
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="button" id="maininput-button">
+                    判定
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- mainjudge -->
+    <div class="container" id="judge">
+        <div class="row d-flex align-items-center">
+            <div class="col-12">
+                <div class="alert alert-info" id="judge-result" role="alert">
+                    <span id="judge-text">
+                        ここに判定結果が出ます
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- userinput -->
+    <div class="container" id="userinput">
+        <div class="row d-flex align-items-center">
+            <div class="col-12 col-md-4" id="userinput1">
+                <div class="row">
+                    <div class="col-12">
+                        <input type="text" id="userinput1-text" placeholder="使用できる文字は 0-9ATJQKatjqk です" autocomplete="off">
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="button" id="userinput1-submit">
+                            入力
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4" id="userinput2">
+                <div class="row">
+                    <div class="col-12">
+                        <input type="text" id="userinput2-text" placeholder="使用できる文字は 0-9ATJQKatjqk です" autocomplete="off">
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="button" id="userinput2-submit">
+                            入力
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4" id="userinput3">
+                <div class="row d-flex align-items-center">
+                    <div class="col-12">
+                        <input type="text" id="userinput3-text" placeholder="使用できる文字は 0-9ATJQKatjqk です" autocomplete="off">
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="button" id="userinput3-submit">
+                            入力
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- judgelog -->
+    <div class="container" id="judgelog">
+        <div class="row">
+            <div class="col-12">
+                <div id="table-window">
+                    <table class="table" >
+                        <thead>
+                            <tr>
+                                <th id="tablerow0">入力文字</th>
+                                <th id="tablerow1">入力文字</th>
+                                <th id="tablerow2">判定</th>
+                            </tr>
+                        </thead>
+                        <tbody id="judgelog-table">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container" id="footer">
+        <div class="row d-flex align-items-center">
+            <div class="col-3 offset-9" id="twitter-link">
+                Created by <a href="https://twitter.com/prinum2357">Hanabusan</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
+    <script type="module" src="assets/js/primeqk.js"></script>
+    <script type="module" src="assets/js/table.js"></script>
+
+</body>
+
+</html>
